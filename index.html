@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="libPhewtick : PHP library wrapped around Phewtick's API" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>libPhewtick</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/jglim/libPhewtick">View on GitHub</a>
+
+          <h1 id="project_title">libPhewtick</h1>
+          <h2 id="project_tagline">PHP library wrapped around Phewtick's API</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/jglim/libPhewtick/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/jglim/libPhewtick/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>libPhewtick</h1>
+
+<p>PHP Library for automating Phewtick operations</p>
+
+<ul>
+<li>Get QR code strings</li>
+<li>Perform "Meetups"</li>
+<li>Test token validity</li>
+</ul><p>There are many possbilities for this, such as running this on a crontab to perform "regular meetups"</p>
+
+<h2>Usage</h2>
+
+<p>Creating a meetup between two users</p>
+
+<pre><code>$firstToken = "000000000000000000000000000000000";
+$secondToken = "111111111111111111111111111111111";
+
+$meetingLat = '1.276153';
+$meetingLng = '103.854760';
+
+echo ptSetMeetingBetweenTwoTokens($firstToken, $secondToken, $meetingLat. $meetingLng);
+</code></pre>
+
+<h2>License</h2>
+
+<p>MIT</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">libPhewtick maintained by <a href="https://github.com/jglim">jglim</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
